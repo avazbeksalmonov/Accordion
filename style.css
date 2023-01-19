@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
+}
+
+.accordion {
+    max-width: 530px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .accordion-content {
+    background: #fff7f0;
+    border-radius: 4px;
+    border: 1px solid #ffd6b3;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.accordion-content.open {
+    padding-bottom: 10px;
+}
+
+.accordion-content.open header {
+    min-height: 35px;
+}
+
+.accordion-content header {
+    display: flex;
+    min-height: 50px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-content:nth-child(2) {
+    background: #f0faff;
+    border-color: #cceeff;
+}
+
+.accordion-content:nth-child(3) {
+    background: mediumaquamarine;
+    color: #fff;
+}
+
+.accordion-content:nth-child(4) {
+    background: chartreuse;
+}
+
+.accordion-content header .title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.accordion-content header i {
+    font-size: 15px;
+    color: #333;
+}
+
+.accordion-content .description {
+    font-size: 12px;
+    padding: 0 15px;
+    font-weight: 400;
+    color: #333;
+    height: 0;
+    transition: 0.2s linear;
+}
