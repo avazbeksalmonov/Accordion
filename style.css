@@ -49,6 +49,11 @@ body {
     justify-content: space-between;
 }
 
+.accordion-content:nth-child(1) {
+    background: #b9cf12;
+    border-color: #cceeff;
+}
+
 .accordion-content:nth-child(2) {
     background: #f0faff;
     border-color: #cceeff;
@@ -60,7 +65,12 @@ body {
 }
 
 .accordion-content:nth-child(4) {
-    background: chartreuse;
+    background: crimson;
+    color: #fff !important;
+}
+
+.accordion-content:nth-child(4).description {
+    color: #fff;
 }
 
 .accordion-content header .title {
